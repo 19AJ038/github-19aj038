@@ -1,0 +1,19 @@
+img{
+    border-radius: 50%;
+    width:  750px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+    border: 9px solid #a76e1a;
+}
+h1{
+    color: white;
+    background-color: #fb8c00;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+h2{
+    border-left: solid 5px #ffcc80;
+    padding-left: 10px;
+}
+article{
+    background-color: rgb(203, 214, 214);
+}
