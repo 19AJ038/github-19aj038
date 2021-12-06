@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuma KATAGIRI's Page</title>
+    <title>片桐悠馬の自己紹介ページ</title>
     <!-- CSSファイルの読み込み -->
     <!-- Linkと打ってCSS選択 -->
     <link rel="stylesheet" href="style.css">
@@ -14,41 +14,87 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- Vuetifyに必要なファイルを読み込む -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 </head>
 
 <body>
     <h1>
-        Yuma KATAGIRI's introduction
+        片桐悠馬の自己紹介ページ
     </h1>
-    <img src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg" alt="kotatsu">
+    <img src="img/kotatsu.jpg" alt="kotatsu">
     <h2>
         プロフィール
     </h2>
     <p>
-        出身：東京都<br>
+        出身：東京都江東区<br>
         所属：東京電機大学　システムデザイン工学部　情報システム工学科 <br>
         身長：163cm <br>
         趣味：サッカー観戦・ゲーム<br>
     </p>
+
+        <br>
+
     <h2>
         ひとこと
     </h2>
     <p>
         ラーメンズが好きです。<br>
     </p>
+
+    <br>
+
+    <h2>
+        所属研究室
+    </h2>
+
+    <div id="app" v-cloak>
+        <v-app>
+            <v-main>
+                <v-container>
+                    <v-row>
+                        <v-col>
+                            <v-card elevation="2">
+                                <v-card-title>知的情報空間研究室所属</v-card-title>
+                                <v-card-subtitle>Iot等を学ぶ研究室です</v-card-subtitle>
+                                <v-divider></v-divider>
+                                <v-card-text>
+                                    東京都足立区にある東京電機大学システムデザイン工学部情報システム工学科の中にあります。
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn>
+                                        <button type=“button” onclick="location.href='https://www.matsuilab.com/'">研究室ホームページへ</button>
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-main>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            vuetify: new Vuetify(),
+            data() {
+                return {
+                    message: "Hello world",
+                }
+            }
+        })
+    </script>
 </body>
 
-<body>
-    <button type="button">
-        ボタン
-    </button>
-
-</body>
-
-<article>
+<!-- <article>
     <footer>
         © 2021
     </footer>
-</article>
+</article> -->
 
 </html>
